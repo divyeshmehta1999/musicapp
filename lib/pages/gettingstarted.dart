@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_navigation/src/routes/default_transitions.dart';
-
 import 'SignIn.dart';
 
 class GettingStarted extends StatefulWidget {
@@ -73,35 +71,38 @@ class _GettingStartedState extends State<GettingStarted> {
               
               ),
             ),
-      Card(
-        shadowColor: const Color(0xFF39C0D4),
-        elevation: 10,
-        margin: const EdgeInsetsDirectional.only(start: 26, top: 677, end: 26, bottom: 0),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadiusDirectional.circular(50)),
-        color: const Color(0xFF06A0B5),
-        child: Container(
-          height: 59,
-          width: 377,
-          decoration: BoxDecoration(
-            color: const Color(0xFF06A0B5),
-            boxShadow: const [BoxShadow(color: Color(0xFF39C0D4),)],
-            borderRadius: BorderRadius.circular(50),
-        ),
-          child: TextButton(
-            onPressed: (){
-              Get.to(
-                curve: Curves.easeOut,
-                duration: const Duration(milliseconds: 300),
-                transition: Transition.fadeIn,
-                const SignIn(),
-              );},
-            child: const Text('Get Started',
-              style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white),),),
-            ),
+      Padding(
+        padding: const EdgeInsets.only(top:64.0),
+        child: Card(
+          shadowColor: const Color(0xFF39C0D4),
+          elevation: 10,
+          margin: const EdgeInsetsDirectional.only(start: 26, top: 677, end: 26, bottom: 0),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadiusDirectional.circular(50)),
+          color: const Color(0xFF06A0B5),
+          child: Container(
+            height: 59,
+            width: 377,
+            decoration: BoxDecoration(
+              color: const Color(0xFF06A0B5),
+              boxShadow: const [BoxShadow(color: Color(0xFF39C0D4),)],
+              borderRadius: BorderRadius.circular(50),
           ),
+            child: TextButton(
+              onPressed: (){
+                Get.to(
+                  curve: Curves.easeOut,
+                  duration: const Duration(milliseconds: 300),
+                  transition: Transition.fadeIn,
+                  const SignIn(),
+                );},
+              child: const Text('Get Started',
+                style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),),),
+              ),
+            ),
+      ),
         ],
       ),
       );

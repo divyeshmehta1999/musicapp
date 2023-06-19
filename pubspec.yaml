@@ -72,6 +72,13 @@ flutter:
     - images/page1/
     - images/page2/
     - images/SignInPage/
+    - images/HomePage/
+    - icons/HomePage/
+    - icons/LoginPage/
+    - icons/NavigationBar/
+    - icons/ExplorePage/
+    - images/Explore Page/
+    - images/Library/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
